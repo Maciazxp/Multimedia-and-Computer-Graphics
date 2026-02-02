@@ -10,10 +10,10 @@ public class menu {
 
         public menu() { //menu constructor to initialize everything
                 this.scanner = new Scanner(System.in);
-                startmenu(); //call to the method startmenu
+                startMenu(); //call to the method startmenu
         }
 
-        public void startmenu() { //method start menu
+        public void startMenu() { //method start menu
                 boolean validInput = false;
 
                 while (!validInput) {

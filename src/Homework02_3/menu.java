@@ -9,27 +9,27 @@ public class menu {
 
     public menu() { //menu constructor where everything is called
         scanner = new Scanner(System.in);
-        showmenu(); //call to the menu method
-        opcionmenu(); //call option menu to start an action
+        showMenu(); //call to the menu method
+        opcionMenu(); //call option menu to start an action
     }
 
-    public void showmenu() { //menu method that shows the options
+    public void showMenu() { //menu method that shows the options
         System.out.println("Menu");
         System.out.println("1. polar to cartesian");
         System.out.println("2. cartesian to polar");
     }
 
-    public void opcionmenu() { //method to manage the input of the menu
+    public void opcionMenu() { //Method to manage the input of the menu
         int opcion;
-        do { // do while to close when the third option is chosen
+        do { //Do while to close when the third option is chosen
             System.out.println("select an option");
-            opcion = validoption(); //the option is validated by the validoption method
-            switch (opcion) { //switch case for the different options
+            opcion = validOption(); //The option is validated by the validoption method
+            switch (opcion) { //Switch case for the different options
                 case 1:
-                    p_c(); //call to the polar to cartesian method
+                    p_c(); //Call to the polar to cartesian method
                     break;
                 case 2:
-                    c_p(); //call to de cartesian to polar method
+                    c_p(); //Call to de cartesian to polar method
                     break;
                 case 3:
 
@@ -45,7 +45,7 @@ public class menu {
         scanner.close();
     }
 
-    public int validoption() { //method to accept a valid option in optionmenu
+    public int validOption() { //method to accept a valid option in optionmenu
         try {
             return Integer.parseInt(scanner.nextLine());
         } catch (NumberFormatException e) {
@@ -70,9 +70,9 @@ public class menu {
     }
 
     public void c_p() { //cartesian to polar method
-        double xcord=validate_x(); //call to the method that validates the input for x and assign it to a variable
-        double ycord=validate_y(); // call to the method that validates the input for y and assign it to a variable
-        cartesian_polar cp = new cartesian_polar(xcord, ycord);
+        double xCord=validate_x(); //call to the method that validates the input for x and assign it to a variable
+        double yCord=validate_y(); // call to the method that validates the input for y and assign it to a variable
+        cartesian_polar cp = new cartesian_polar(xCord, yCord);
 
     }
 

@@ -10,11 +10,11 @@ public class calculator {
         this.y = 0;
     }
 
-    public calculator(double x, double y) { //calculator construct to initialize with x and y
+    public calculator(double x, double y) { //Calculator construct to initialize with x and y
             this.x = x;
             this.y = y;
             System.out.println("the aspect ratio is");
-            aspectratio(x, y); //call the method aspectratio with the parameters x and y
+            aspectRatio(x, y); //Call the method aspectratio with the parameters x and y
 
     }
 
@@ -30,7 +30,7 @@ public class calculator {
         return a;
     }
 
-    private void aspectratio(double x, double y) { //aspectratio method to calculate the aspect ratio
+    private void aspectRatio(double x, double y) { //Aspectratio method to calculate the aspect ratio
         this.x = x;
         this.y = y;
 
