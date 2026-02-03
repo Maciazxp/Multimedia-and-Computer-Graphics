@@ -83,27 +83,3 @@ public class field {
         }
     }
 }
-
-/*
-//Circle data (center and radio)
-int cx = 150;
-int cy = 120;
-int r = 60;
-
-        for (int y = 0; y < 600; y++) {
-        for (int x = 0; x < 800; x++) {
-double distanciaAlSol = Math.sqrt(Math.pow(x - cx, 2) + Math.pow(y - cy, 2));
-double mountain = 450 + 30 * Math.sin(x * 0.05);
-
-                if (y > mountain) {
-        image.setRGB(x, y, Color.GREEN.getRGB()); // Verde
-        }
-        else if (distanciaAlSol < r) {
-        image.setRGB(x, y, Color.YELLOW.getRGB()); // Amarillo
-        }
-        else {
-        image.setRGB(x, y, Color.WHITE.getRGB()); // Cielo
-        }
-        }
-        }
-*/
